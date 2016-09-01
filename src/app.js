@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom'
 
 const App = React.createClass({
   render: function() {
-    return (<div>Testing is this working</div>);
+    return (<div>TESTING</div>)
   }
 });
+
+const mountNode = document.querySelector('#root');
+ReactDOM.render(<App />, mountNode);
