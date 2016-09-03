@@ -16,6 +16,7 @@ const path    = require('path'),
 
 const getConfig = require('hjs-webpack');
 
+const cssModulesNames = `${isDev ? '[path][name]__[local]__' : ''}[hash:base64:5]`;
 
 const root    = resolve(__dirname);
 const src     = join(root, 'src');
